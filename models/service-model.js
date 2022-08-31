@@ -12,7 +12,7 @@ Service.init(
             autoIncrement: true
         },
         service_name: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         price: {

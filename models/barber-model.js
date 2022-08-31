@@ -30,11 +30,16 @@ Barber.init(
         },
         password: {
             type: DataTypes.STRING,
-            allowNull: false,
+            require: true,
+            unique: true,
             validate: {
                 len: [8, 20]
             }
-        }
+        },
+        phone: {
+            type: Number,
+            require: true,
+        },
     },
     {
         hooks: {
