@@ -29,8 +29,9 @@ Customer.init(
                 isEmail: true,
             },
         },
-        phoneNumber: {
-
+        phone: {
+            type: Number,
+            require: true,
         },
         password: {
             type: DataTypes.STRING,
