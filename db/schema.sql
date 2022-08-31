@@ -7,6 +7,7 @@ CREATE TABLE barber (
     barber_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     barber_name VARCHAR(50) NOT NULL,
     barber_email VARCHAR(50) NOT NULL,
+    barber_password INT NOT NULL VARCHAR(25),
     bio VARCHAR(180) NOT NULL,
     barber_phone_number INT NOT NULL
 )
@@ -15,13 +16,14 @@ CREATE TABLE customer (
     customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(50) NOT NULL,
     customer_email VARCHAR(50) NOT NULL,
+    customer_password INT NOT NULL VARCHAR(25),
     customer_phone_number INT NOT NULL
 
 )
 
 CREATE TABLE appointment (
     appointment_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    time_id INT NOT NULL AUTO_INCREMENT,
+    time INT NOT NULL AUTO_INCREMENT,  
     service_id INT NOT NULL AUTO_INCREMENT,
     customer_id INT NOT NULL AUTO_INCREMENT FOREIGN KEY,
     barber_id INT NOT NULL AUTO_INCREMENT FOREIGN KEY 
