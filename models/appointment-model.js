@@ -11,11 +11,6 @@ Appointment.init(
             primaryKey: true,
             autoIncrement: true
         },
-        time_id:{
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            // autoIncrement: true
-        },
         service_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
