@@ -3,8 +3,8 @@ const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
 class Barber extends Model { 
-    checkPassword(userPw) {
-        return bcrypt.compareSync(userPw, this.password)
+    checkPassword(barberPw) {
+        return bcrypt.compareSync(barberPw, this.password)
     };
 }
 
@@ -38,13 +38,13 @@ Barber.init(
     },
     {
         hooks: {
-            beforeCreate: async (newUserData) => {
-                newUserData.password = await bcrypt.hash(newUserData.password, 10);
-                return newUserData;
+            beforeCreate: async (newBarberData) => {
+                newBarberData.password = await bcrypt.hash(newBarberData.password, 10);
+                return newBarberData;
             },
-            beforeUpdate: async (updatedUserData) => {
-                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-                return updatedUserData;
+            beforeUpdate: async (updatedBarberData) => {
+                updatedBarberData.password = await bcrypt.hash(updatedBarberData.password, 10);
+                return updatedBarberData;
             },
         },
         sequelize,
