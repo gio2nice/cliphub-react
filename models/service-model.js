@@ -16,14 +16,21 @@ Service.init(
             allowNull: false,
         },
         price: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DECIMAL,
             allowNull: false,
-            required: true,
         },
-        time_id: {
+        time: {
             type: DataTypes.INTEGER,
             allowNull: false,
         }
+    },
+    {
+        //table configuration
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'service'
     }
 );
 
