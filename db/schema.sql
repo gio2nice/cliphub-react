@@ -23,8 +23,8 @@ CREATE TABLE customer (
 
 CREATE TABLE appointment (
     appointment_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    time INT NOT NULL AUTO_INCREMENT,  
-    service_id INT NOT NULL AUTO_INCREMENT,
+    time INT NOT NULL,  
+    service_id INT NOT NULL AUTO_INCREMENT FOREIGN KEY,
     customer_id INT NOT NULL AUTO_INCREMENT FOREIGN KEY,
     barber_id INT NOT NULL AUTO_INCREMENT FOREIGN KEY 
 )
@@ -32,4 +32,10 @@ CREATE TABLE appointment (
 CREATE TABLE portfolio (
     portfolio_id PRIMARY KEY,
     barber_id FOREIGN KEY
+)
+
+CREATE TABLE service (
+    service_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    service_name VARCHAR(50) NOT NULL,
+    price INT NOT NULL,
 )
