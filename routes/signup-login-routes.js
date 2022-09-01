@@ -1,3 +1,9 @@
+const express = require('express');
+const router = express.Router();
+const { signupLogin } = require('../models/signup-login-model')
+const app = express();
+
+
 router.get('/signup', (req, res) => {
     res.render('signup');
 });
