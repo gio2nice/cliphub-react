@@ -20,7 +20,7 @@ Appointment.init(
             // autoIncrement: true
         },
         customer_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'customer',
                 key: 'id',
@@ -28,7 +28,7 @@ Appointment.init(
             }
         },
         barber_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'barber',
                 key: 'id',
