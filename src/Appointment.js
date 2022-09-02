@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Scheduler(){
+function Appointment(){
     return(
         <div>
             <h1>Schedule with your barber here</h1>
@@ -8,4 +8,4 @@ function Scheduler(){
     )
 }
 
-export default Scheduler;
+export default Appointment;

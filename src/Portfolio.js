@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Home(){
+function Portfolio(){
     return(
         <div>
-            <h1>Welcome to Cliphub</h1>
+            <h1>Login</h1>
         </div>
     )
 }
 
-export default Home;
+export default Portfolio;
