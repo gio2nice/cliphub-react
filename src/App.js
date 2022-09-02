@@ -1,9 +1,11 @@
 import React from "react";
 import logo from './logo.svg';
 import "./App.css";
-import Home from './Login';
-import About from './About';
-import Scheduler from './Appointment';
+import Login from './Login';
+import Barber from './Barber';
+import Customer from './Customer';
+import Appointment from './Appointment';
+import Portfolio from './Portfolio';
 import {Routes, Route, BrowserRouter, Link} from 'react-router-dom';
 import NavBar from "./NavBar";
 
