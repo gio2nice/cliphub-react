@@ -16,3 +16,5 @@ router.get('/login', (req, res) => {
 
     res.render('login', { logged_in: false });
 });
+
+module.exports = router;

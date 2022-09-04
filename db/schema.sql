@@ -29,10 +29,10 @@ CREATE TABLE appointment (
     barber_id INT NOT NULL AUTO_INCREMENT FOREIGN KEY 
 )
 
-CREATE TABLE portfolio (
-    portfolio_id PRIMARY KEY,
-    barber_id FOREIGN KEY
-)
+-- CREATE TABLE portfolio (
+--     portfolio_id PRIMARY KEY,
+--     barber_id FOREIGN KEY
+-- )
 
 CREATE TABLE service (
     service_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
