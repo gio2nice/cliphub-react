@@ -44,3 +44,4 @@ const LogIn = ({changePage, changeUser}) => {
     )
 }
 
+export default LogIn;
