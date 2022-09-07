@@ -4,7 +4,7 @@ import "./App.css";
 import Home from './Home';
 import About from './About';
 import Scheduler from './Scheduler';
-import {Routes, Route, BrowserRouter, Link} from 'react-router-dom';
+import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
 import NavBar from "./NavBar";
 
 function App() {
