@@ -1,9 +1,9 @@
 import React from "react";
 import logo from './logo.svg';
 import "./App.css";
-import Home from './Home';
+import Home from './components/Homepage/Home';
 import About from './About';
-import Scheduler from './Scheduler';
+import Scheduler from './components/Scheduler/Scheduler';
 import {Routes, Route, BrowserRouter, Link} from 'react-router-dom';
 import NavBar from "./NavBar";
 
