@@ -1,7 +1,7 @@
 import React from "react";
 import logo from './logo.svg';
 import "./App.css";
-import Home from './Home';
+import Home from './pages/Home';
 import About from './About';
 import Scheduler from './Scheduler';
 import {Routes, Route, BrowserRouter, Link} from 'react-router-dom';
