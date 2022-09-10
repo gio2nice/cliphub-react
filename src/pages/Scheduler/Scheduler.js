@@ -1,8 +1,9 @@
 import React from 'react'
 import { PopupModal } from "react-calendly";
+import Button from '@mui/material/Button';
 
 class Scheduler extends React.Component {
-  constructor(props) {
+  constructor(props) { 
     super(props);
 
     this.state = {
@@ -13,12 +14,7 @@ class Scheduler extends React.Component {
   render() {
     return (
       <div>
-        <button
-          style={{ display: "block", margin: "0 auto" }}
-          onClick={() => this.setState({ isOpen: true })}
-        >
-          Schedule Now!
-        </button>
+        <Button variant="contained" style={{ display: "block", margin: "0 auto" }} onClick={() => this.setState({ isOpen: true})}>Schedule Now!</Button>
         <PopupModal
           url="https://calendly.com/thenoahac/barber-appointment"
           pageSettings={this.props.pageSettings}
