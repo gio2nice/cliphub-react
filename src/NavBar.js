@@ -3,17 +3,19 @@ import {Link} from "react-router-dom"
 
 function NavBar(){
     return(
-        <ul>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/About">About</Link>
-            </li>
-            <li>
-                <Link to="/Scheduler">Scheduler</Link>
-            </li>
-        </ul>
+        <header>
+            <div className="container">
+                <Link to ="/">
+                    <h1>ClipHub</h1>
+                </Link>
+                <nav>
+                    <div>
+                        <Link to="/login">Login</Link>
+                        <Link to="/signup">Signup</Link>
+                    </div>
+                </nav>
+            </div>
+        </header>
     )
 }
 
