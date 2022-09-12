@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Button from '@mui/material/Button';
 // import API from "../../utils/API";
 
 const Signup = () => {
@@ -34,7 +35,7 @@ const Signup = () => {
                 value={phonenumber}
             />
 
-            <button>Create Account</button>
+            <Button variant="contained" style={{ display: "block", margin: "0 auto" }} type="submit" >Sign Up</Button>{''}
         </form>
     )
 }
