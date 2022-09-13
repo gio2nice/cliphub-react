@@ -1,7 +1,11 @@
 import React from "react"
+import Button from '@mui/material/Button';
 import {Link} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
+
 
 function NavBar(){
+    const navigate = useNavigate();
     return(
         <header>
             <div className="container">
@@ -10,13 +14,12 @@ function NavBar(){
                 </Link>
                 <nav>
                     <div>
-                        <Link to="/login">Login</Link>
-                        <Link to="/signup">Signup</Link>
+                        <Button variant="contained" style={{ display: "inline", margin: "0 auto" }}  onClick={()=>navigate("/Login")}>Login</Button>
+                        <Button variant="contained" style={{ display: "inline", margin: "0 auto" }}  onClick={()=>navigate("/Signup")}>Signup</Button>
                     </div>
                 </nav>
             </div>
         </header>
     )
 }
-
 export default NavBar;

@@ -1,8 +1,11 @@
 import {useState} from 'react';
 // import API from "../../utils/API";
+import Button from '@mui/material/Button';
+
+
 
 const Login = () => {
-    const [email, setEmail] = useState('')
+   const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const handleSubmit = async (e) => {
@@ -27,7 +30,7 @@ const Login = () => {
                 value={password}
             />
 
-            <button>Log in</button>
+            <Button variant="contained" style={{ display: "block", margin: "0 auto" }} type="submit" >Log in</Button>{''}
         </form>
     )
 }
