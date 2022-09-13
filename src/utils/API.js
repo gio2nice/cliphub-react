@@ -1,4 +1,4 @@
-const API_LOCATION = "http://localhost:3001";
+const API_LOCATION = "https://cliphub-back.herokuapp.com/";
 
 const API = {
     checkName: async (nameToCheck) => {
