@@ -1,6 +1,8 @@
 import {useState} from 'react';
 // import API from "../../utils/API";
-import Button from 'react-bootstrap/Button'
+import Button from '@mui/material/Button';
+
+
 
 const Login = () => {
    const [email, setEmail] = useState('')
@@ -28,7 +30,7 @@ const Login = () => {
                 value={password}
             />
 
-            <Button type="submit" >Log in</Button>{''}
+            <Button variant="contained" style={{ display: "block", margin: "0 auto" }} type="submit" >Log in</Button>{''}
         </form>
     )
 }
