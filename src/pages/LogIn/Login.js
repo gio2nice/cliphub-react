@@ -1,8 +1,9 @@
 import {useState} from 'react';
 // import API from "../../utils/API";
+import Button from 'react-bootstrap/Button'
 
 const Login = () => {
-    const [email, setEmail] = useState('')
+   const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const handleSubmit = async (e) => {
@@ -27,7 +28,7 @@ const Login = () => {
                 value={password}
             />
 
-            <button>Log in</button>
+            <Button type="submit" >Log in</Button>{''}
         </form>
     )
 }
